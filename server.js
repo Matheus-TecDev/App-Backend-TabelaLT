@@ -1,4 +1,4 @@
-require("dotenv").config();
+// backend/server.js
 const express = require("express");
 const cors = require("cors");
 const pool = require("./db");
@@ -16,19 +16,19 @@ app.get("/", (req, res) => {
 app.get("/aquisicoes", async (req, res) => {
   const query = `
     SELECT  
-        T1.CD_AQUISICAO, 
-        T1.NM_COR, 
-        CONCAT(SUBSTRING(T1.NM_ANO, 1, 4), '-', SUBSTRING(T1.NM_ANO, 5, 4)) AS NM_ANO,  
-        T1.TP_COMBUSTIVEL, 
-        T1.TP_KFMETADE, 
-        T4.NM_SIGLA, 
-        T3.NM_TRANSACAO, 
-        T1.VL_PEDIDO, 
-        T1.NM_KILOMETRO, 
-        T1.NR_PLACA, 
-        T2.NM_MODELO, 
-        T1.TP_SITUACAO, 
-        T1.TP_BLINDADO 
+      T1.CD_AQUISICAO, 
+      T1.NM_COR, 
+      CONCAT(SUBSTRING(T1.NM_ANO, 1, 4), '-', SUBSTRING(T1.NM_ANO, 5, 4)) AS NM_ANO,  
+      T1.TP_COMBUSTIVEL, 
+      T1.TP_KFMETADE, 
+      T4.NM_SIGLA, 
+      T3.NM_TRANSACAO, 
+      T1.VL_PEDIDO, 
+      T1.NM_KILOMETRO, 
+      T1.NR_PLACA, 
+      T2.NM_MODELO, 
+      T1.TP_SITUACAO, 
+      T1.TP_BLINDADO 
     FROM AQUISICAO T1
     LEFT JOIN VEICULO T2 ON T1.CD_MODELO = T2.CD_VEICULO
     LEFT JOIN TRANSACAO T3 ON T1.CD_TRANSACAO = T3.CD_TRANSACAO

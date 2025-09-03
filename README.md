@@ -76,7 +76,7 @@ http://localhost:3000
 
 ---
 
-📌 Roadmap (versões futuras)
+## 📌 Roadmap (versões futuras)
 
 🔄 Migrar de JavaScript → TypeScript.
 
@@ -88,7 +88,7 @@ http://localhost:3000
 
 ---
 
-👨‍💻 Autores
+## 👨‍💻 Autores
 
 - [Matheus Freire](https://github.com/Matheus-TecDev)  
 - [LinkedIn](https://www.linkedin.com/in/matheus-freire-martins-da-costa-318622376/) 

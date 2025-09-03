@@ -11,6 +11,14 @@ Atualmente está em Node.js com JavaScript, garantindo agilidade no desenvolvime
 
 ---
 
+## 🔗 Repositórios Relacionados
+
+- [Backend (este repositório)](https://github.com/Matheus-TecDev/LT-Veiculos-Backend.git)
+- [Frontend (Site em Vite)](https://github.com/Matheus-TecDev/Site-Tabela-LT-Veiculos.git)
+- [Frontend (Aplicativo na Expo)](https://github.com/Matheus-TecDev/App-Frontend-TabelaLT.git)
+
+---
+
 ## ⚡ Funcionalidades
 
 Endpoints REST para manipulação de dados de veículos.
